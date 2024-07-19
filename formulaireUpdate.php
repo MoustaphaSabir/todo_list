@@ -22,10 +22,10 @@ $tache = $reponses->fetch(PDO::FETCH_ASSOC);
     <form action="traitementUpdate.php?id_taches=<?php echo $id_taches; ?>" method="post">
         
         <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required value="<?php echo htmlspecialchars($tache['nom']); ?>"><br>
+        <input type="text" id="nom" name="nom" required value="<?= htmlspecialchars($tache['nom']); ?>"><br>
 
         <label for="description">Description:</label>
-        <textarea id="description" name="description" required><?php echo htmlspecialchars($tache['description']); ?></textarea><br>
+        <textarea id="description" name="description" required><?= htmlspecialchars($tache['description']); ?></textarea><br>
 
         <input type="submit" value="Modifier tâche">
         <input type="reset" value="Annuler">

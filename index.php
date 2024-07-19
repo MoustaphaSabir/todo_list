@@ -51,10 +51,14 @@ $taches = $reponses->fetchAll(PDO::FETCH_ASSOC);
                         <a href="formulaireUpdate.php?id_taches=<?php echo $tache['id_taches']; ?>">Modifier</a>
                     </td>
                     <td>
+                        <!-- Tu dois envoyer une information supplémentaire pour chaque lien : soit "fini" soit "en cours" -->
+                         <!-- Tu dois l'envoyer en GET -->
                         <?php if ($tache['realisee']): ?>
-                            <input type="checkbox">
+                            <!-- remplacer le texte par des icones adaptées ou par un block styliséee toi même -->
+                            <a href="marqueTerminee.php?id_taches=<?php echo $tache['id_taches']; ?>">Fini</a>
                         <?php else: ?>
-                            <a href="marqueTerminee.php?id_taches=<?php echo $tache['id_taches']; ?>">Terminer</a>
+                            <!-- remplacer le texte par des icones adaptées ou par un block styliséee toi même -->
+                            <a href="marqueTerminee.php?id_taches=<?php echo $tache['id_taches']; ?>">En cours</a>
                         <?php endif; ?>
                     </td>
                 </tr>
