@@ -1,9 +1,225 @@
 *{
     box-sizing: border-box;
 }
-body{
-    background-color: aquamarine;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
+
+/* Style pour le conteneur principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Style pour les titres */
+h1, h2 {
+    color: #333;
+}
+
+/* Style pour le formulaire */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #007BFF;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour la table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f8f8;
+}
+
+/* Style pour chaque tâche */
+tbody tr {
+    background-color: #fafafa;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    border-radius: 5px;
+}
+
+/* Style pour les tâches terminées */
+.terminee {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Style pour les icônes */
+a div {
+    display: inline-block;
+    margin-right: 5px;
+    color: #007BFF;
+}
+
+a div:hover {
+    color: #0056b3;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color:#321088;
+    margin-top: 100px;
+}
+
+/* Style pour le conteneur principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: rgb(41, 40, 40);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(205, 180, 180, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Style pour les titres */
+h1, h2 {
+    color: white;
+}
+
+/* Style pour le formulaire */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px #321088;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #007BFF;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8758fe;
+}
+
+
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f8f8;
+
+}
+th{
+    color: white;
+}
+
+/* Style pour chaque tâche */
+tbody tr {
+    background-color: #fafafa;
+}
+
+tbody td {
+    border-radius: 10px;
+   
+}
+
+/* Style pour les tâches terminées */
+.terminee {
+    text-decoration: line-through;
+    color: #8758fe;
+}
+
+/* Style pour les icônes */
+a div {
+    display: inline-block;
+    margin-right: 5px;
+    color: #8758fe;
+}
+
+a div:hover {
+    color: #8758fe ;
+}
+
 
 .fas fa-circle{
     color: red;
@@ -12,17 +228,10 @@ body{
     color: green;
 }
 
-.terminee{
+/* .terminee{
     text-decoration: line-through;
     color: grey;
-}
-.contenair{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 200px;
-   
-}
- form{
-    align-items: center;
-}
+} */
+
+ 
+/* #8758fe */
