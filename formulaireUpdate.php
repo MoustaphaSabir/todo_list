@@ -18,6 +18,7 @@ $tache = $reponses->fetch(PDO::FETCH_ASSOC);
     <title>Formulaire Update</title>
 </head>
 <body>
+    <a href="index.php">Retour accueil</a>
     <h2>Mettre à jour l'article</h2>
     <form action="traitementUpdate.php?id_taches=<?php echo $id_taches; ?>" method="post">
         

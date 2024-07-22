@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+
+.fas fa-circle{
+    color: red;
+}
+.fas fa-check-circle{
+    color: green;
+}
+
+.terminee{
+    text-decoration: line-through;
+    color: grey;
+}
+.contenair{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 200px;
+   
+}
+ form{
+    align-items: center;
+}
