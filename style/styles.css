@@ -129,7 +129,7 @@ body {
     background-color: rgb(41, 40, 40);
     padding: 20px;
     box-shadow: 0 0 10px rgba(205, 180, 180, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -200,6 +200,7 @@ tbody tr {
 
 tbody td {
     border-radius: 10px;
+    font-size: 1rem;
    
 }
 

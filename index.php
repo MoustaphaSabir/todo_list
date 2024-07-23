@@ -6,7 +6,6 @@ $requete = "SELECT * FROM tache";
 $reponses = $bdd->prepare($requete);
 $reponses->execute();
 $taches = $reponses->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,12 +14,13 @@ $taches = $reponses->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gérez efficacement vos tâches quotidiennes avec l'application My_todoList, et organisez mieux votre journée en ajoutant, modifier et supprimer facilement des tâches.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>ToDo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/todo.css">
+    <title>My Todo List</title>
 </head>
 <body>
     <div class="container">
@@ -56,6 +56,7 @@ $taches = $reponses->fetchAll(PDO::FETCH_ASSOC);
                             <a href="delete.php?id_taches=<?php echo $tache['id_taches']; ?>"><div class="fas fa-trash-alt"></div></a>
                             <a href="formulaireUpdate.php?id_taches=<?php echo $tache['id_taches']; ?>"><div class="fas fa-edit"></div></a>
                         </td>
+
                         <td>
                             <?php if ($tache['realisee']): ?>
                                 <a href="marqueTerminee.php?id_taches=<?php echo $tache['id_taches']; ?>"><div class="fas fa-check-circle"></div></a>
