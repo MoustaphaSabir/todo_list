@@ -25,13 +25,13 @@ $taches = $reponses->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div class="container">
         <h1>My Todo List</h1>
-        <h2>Ajouter une Nouvelle Tâche</h2>
+        <h2>Ajouter une Nouvelle Tâche*</h2>
         <form action="traitementAjout.php" method="post">
-            <label for="nom">Nom:</label>
+            <label for="nom"></label>
             <input type="text" id="nom" name="nom" required placeholder="Nouvelle tache">
             
-            <label for="description">Description:</label>
-            <input type="text" id="description" name="description" required placeholder="Nouvelle tache">
+            <label for="description">Description_tache:</label>
+            <input type="text" id="description" name="description"  placeholder="Nouvelle description">
             <br>
             <button type="submit">Ajouter</button>
             <br>

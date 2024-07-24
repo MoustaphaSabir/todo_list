@@ -12,28 +12,45 @@ body {
     font-family: "Bona Nova SC", serif;
     font-weight: 600px;
     font-style: italic;
-    background-color:#c2bacf;
-    background-image: url(./images/téléchargement.png);
+
+    font-size: 1rem;
+    background-image: url(../images/bacground.png);
 }
 
 /* Style pour le conteneur principal */
 .container {
     width: 100%;
     max-width: 600px;
-    background-color: #ffffff;
+    background-color:white;
     padding: 20px;
-    margin-top: 200px;
+    margin-top: 250px;
+    margin-bottom: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 2px solid #6200ea;
     text-align: center;
 }
 
 /* Style pour les titres */
-h1, h2 {
+/* h1, h2 {
     margin-bottom: 20px;
     color: #000000; 
     font-weight: bold;
+} */
+h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+h1:hover {
+    text-decoration: underline;
+    color: rgb(58, 15, 232);
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
 
 /* Style pour le formulaire */
 form {
@@ -64,7 +81,7 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
 }
 
 form button:hover {
